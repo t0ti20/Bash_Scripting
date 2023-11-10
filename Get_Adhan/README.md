@@ -1,85 +1,33 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <style>
-    code {
-      white-space: pre-wrap;
-    }
-  </style>
-</head>
-
 <body>
 
-<h1>File Comparison and Get Adhan Scripts</h1>
-
-<h2>File Comparison Script</h2>
-
-<p>A Bash script for comparing two files based on their MD5 checksums.</p>
-
-<h3>Usage</h3>
-
-<ol>
-  <li><strong>Clone the repository to your local machine:</strong></li>
-  <code>git clone https://github.com/your-username/your-repo.git</code>
-
-  <li><strong>Navigate to the script directory:</strong></li>
-  <code>cd your-repo</code>
-
-  <li><strong>Make the script executable:</strong></li>
-  <code>chmod +x file_comparison.sh</code>
-
-  <li><strong>Run the script:</strong></li>
-  <code>./file_comparison.sh</code>
-
-  <li>Follow the prompts to enter the locations of the two files you want to compare.</li>
-</ol>
-
-<h3>Example</h3>
-
-<code>
-$ ./file_comparison.sh
-Enter Location Of First File : /path/to/first/file
-Enter Location Of Second File : /path/to/second/file
-Two Files Are The Same ...
-</code>
-
-<h3>Contributing</h3>
-
-<p>Contributions are welcome! Feel free to open an issue or submit a pull request for new features, improvements, or bug fixes.</p>
-
-<h3>License</h3>
-
-<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
-
-<hr>
-
-<h2>Get Adhan Script</h2>
+<h1>Get Adhan Script</h1>
 
 <p>A Bash script to fetch prayer timings (Adhan) for a specified city and date using the Aladhan API.</p>
 
-<h3>Usage</h3>
+<h2>Usage</h2>
 
 <ol>
   <li><strong>Clone the repository to your local machine:</strong></li>
-  <code>git clone https://github.com/your-username/your-repo.git</code>
+  <code>git clone https://github.com/t0ti20/Bash_Scripting</code>
 
   <li><strong>Navigate to the script directory:</strong></li>
-  <code>cd your-repo</code>
+  <code>cd Bash_Scripting/Get_Adhan</code>
 
   <li><strong>Make the script executable:</strong></li>
-  <code>chmod +x get_adhan.sh</code>
+  <code>chmod +x Get_Adhan.sh</code>
 
   <li><strong>Run the script:</strong></li>
-  <code>./get_adhan.sh</code>
+  <code>./Get_Adhan.sh</code>
 
   <li>The script will fetch and display the prayer timings for the specified city and date.</li>
 </ol>
 
-<h3>Example</h3>
+<h2>Example</h2>
 
 <code>
-$ ./get_adhan.sh
+$ ./Get_Adhan.sh
 =================================
 - Fajr At -> 05:30 AM
 - Dhuhr At -> 12:15 PM
@@ -89,11 +37,11 @@ $ ./get_adhan.sh
 =================================
 </code>
 
-<h3>Contributing</h3>
+<h2>Contributing</h2>
 
 <p>Contributions are welcome! Feel free to open an issue or submit a pull request for new features, improvements, or bug fixes.</p>
 
-<h3>License</h3>
+<h2>License</h2>
 
 <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 
