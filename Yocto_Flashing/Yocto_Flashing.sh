@@ -1,9 +1,8 @@
 #!/bin/bash
-
 ############################################
 #------------ Script Variables -------------
 ############################################
-WIC_Image="/home/t0ti20/Shared/rpi-test-image-raspberrypi4-64-20231201135305.rootfs.wic.bz2"
+WIC_Image="/home/t0ti20/Shared/rpi-test-image-raspberrypi4-64.wic.bz2"
 
 ############################################
 #------------ Flashing Image ---------------
@@ -30,9 +29,10 @@ Do_Flash()
      lsblk
      echo "==================================="
      read -p "Please Choose Device To Flash: " Device
+     sudo mkfs -t ext4 /dev/${Device}2
+     sudo mkfs -t vfat /dev/${Device}1
      bzcat "${WIC_Image}" | sudo dd of="/dev/${Device}" status=progress
      echo "Done Flashing."
-
      while true; do
           read -p "Do you want to mount? (y/n): " Confirm
           case $Confirm in
@@ -41,6 +41,7 @@ Do_Flash()
                ;;
           "y" | "Y")
                Do_Mount
+               break
                ;;
           *)
                echo "Invalid Option. Please enter 'y' for yes or 'n' for no."
@@ -56,6 +57,7 @@ Do_Flash()
                ;;
           "y" | "Y")
                Do_Configure
+               break
                ;;
           *)
                echo "Invalid Option. Please enter 'y' for yes or 'n' for no."
