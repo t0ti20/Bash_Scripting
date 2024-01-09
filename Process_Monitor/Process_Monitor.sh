@@ -153,11 +153,9 @@ Alert()
         MEMORY_Usage=$(free | awk '/^Mem/{printf("%.0f", $3/$2*100)}')
         if [ "$CPU_Usage" -gt "$CPU_Threshold" ]; then
             Print "${RED}" "\nALERT: CPU usage exceeded ${CPU_Threshold}% - Current CPU Usage: ${CPU_Usage}%\n"
-            # Add your alert action here
         fi
         if [ "$MEMORY_Usage" -gt "$MEMORY_Threshold" ]; then
             Print "${RED}" "\nALERT: Memory usage exceeded ${MEMORY_Threshold}% - Current Memory Usage: ${MEMORY_Usage}%\n"
-            # Add your alert action here
         fi
         sleep ${Update_Interval}  # Adjust the sleep duration as needed
     done
