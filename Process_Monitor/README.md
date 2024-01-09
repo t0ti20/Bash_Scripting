@@ -7,7 +7,7 @@ The `Process_Monitor.sh` script is a versatile and interactive tool designed for
 ## Features
 
 ### 1. List All Processes
-
+![image](https://github.com/t0ti20/Bash_Scripting/assets/61616031/09571009-2292-4d55-8c95-8edb9133f1bb)
 ```BASH
 ./Process_Monitor.sh -l
 ```
@@ -15,6 +15,7 @@ The `Process_Monitor.sh` script is a versatile and interactive tool designed for
 This option lists detailed information about all running processes, including PID, CPU usage, memory usage, and command.
 
 ### 2. Process Information
+![image](https://github.com/t0ti20/Bash_Scripting/assets/61616031/63e4fe71-d105-4847-ad2d-404e9d381873)
 
 ```BASH
 ./Process_Monitor.sh -i [PID]`
@@ -23,6 +24,7 @@ This option lists detailed information about all running processes, including PI
 Displays detailed information about a specific process identified by its Process ID (PID). This includes PID, parent PID, CPU usage, memory usage, user, start time, thread name, time, and command.
 
 ### 3. Kill Process
+![image](https://github.com/t0ti20/Bash_Scripting/assets/61616031/bdcb16fc-8ea4-4721-8e53-c98dbe9ccaf2)
 
 ```BASH
 ./Process_Monitor.sh -k [PID]`
@@ -31,7 +33,7 @@ Displays detailed information about a specific process identified by its Process
 Allows you to kill a specific process by entering its PID. A confirmation prompt ensures you don't accidentally terminate a process.
 
 ### 4. Display System Statistics
-
+![image](https://github.com/t0ti20/Bash_Scripting/assets/61616031/e07a363b-182d-4bd5-9962-929f90aa7a4f)
 ```BASH
 ./Process_Monitor.sh -s
 ```
@@ -39,7 +41,7 @@ Allows you to kill a specific process by entering its PID. A confirmation prompt
 Shows system-wide process statistics, including the total number of processes, memory usage, CPU load, and system uptime.
 
 ### 5. Monitor Processes in Real-Time
-
+![image](https://github.com/t0ti20/Bash_Scripting/assets/61616031/288d234f-1c72-4532-98c8-50e7c1122281)
 ```BASH
 ./Process_Monitor.sh -m
 ```
@@ -47,7 +49,7 @@ Shows system-wide process statistics, including the total number of processes, m
 Continuously monitors and displays information about running processes in real-time. It updates every specified interval (default: 10 seconds).
 
 ### 6. Enable Alert Mode
-
+![image](https://github.com/t0ti20/Bash_Scripting/assets/61616031/99667e59-929c-4784-9d50-2327b6bdf2f1)
 ```BASH
 ./Process_Monitor.sh -a
 ```
@@ -55,7 +57,7 @@ Continuously monitors and displays information about running processes in real-t
 Enables alert mode for CPU and memory usage. If thresholds are exceeded, an alert message is displayed. This runs continuously in the background.
 
 ### 7. Search and Filter Processes
-
+![image](https://github.com/t0ti20/Bash_Scripting/assets/61616031/35825d6d-f0c0-4374-8e3f-86ef2b85dfa5)
 ```BASH
 ./Process_Monitor.sh -f [OPT]
 ```
@@ -63,7 +65,7 @@ Enables alert mode for CPU and memory usage. If thresholds are exceeded, an aler
 Search for processes based on specific criteria: user (`usr`), process ID (`pid`), or process name (`name`).
 
 ### 8. Interactive Mode
-
+![image](https://github.com/t0ti20/Bash_Scripting/assets/61616031/e59b74cb-ec66-4ac3-aadd-96f9f63753f0)
 ```BASH
 ./Process_Monitor.sh -o
 ```
@@ -90,7 +92,7 @@ The interactive mode includes the following operations:
     - Terminate the script and exit the interactive mode.
 
 ### 9. Help
-
+![image](https://github.com/t0ti20/Bash_Scripting/assets/61616031/a1f4dda9-981f-4e2f-8c84-572239d94653)
 ```BASH
 ./Process_Monitor.sh -h
 ```
