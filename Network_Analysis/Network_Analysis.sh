@@ -2,9 +2,9 @@
 ############################################
 #             Configurations               #
 ############################################
+PCAP_Location="$(pwd)/Test.pcap"
+Interface="eth0"
 readonly Application_Name=$(basename "$0")
-readonly PCAP_Location="$(pwd)/Test.pcap"
-readonly Interface="eth0"
 readonly Update_Interval=2
 ############################################
 #            Common Configure              #
