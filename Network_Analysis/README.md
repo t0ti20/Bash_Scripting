@@ -4,6 +4,9 @@
 
 This script provides functionality for capturing and analyzing network traffic using `tcpdump` and `tshark`. It includes features for generating network traffic analysis reports and capturing traffic on a specified interface.
 
+![image](https://github.com/t0ti20/Bash_Scripting/assets/61616031/3584149c-8756-4289-8a74-8ff30c99997d)
+
+
 ## Configurations
 
 The script uses several configurations, which can be modified at the beginning of the script:
