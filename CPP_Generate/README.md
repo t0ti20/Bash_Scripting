@@ -1,49 +1,43 @@
-# Command Database Script
+## Description
 
-This script allows you to manage and execute saved commands in a simple database.
+This script is a simple Bash tool designed to generate C++ header and program files with a basic template. It prompts the user to enter information such as author name, email, file name, class name, and namespace. The generated files include a header file (.hpp) and a program file (.cpp) with predefined structures and comments.
 
 ## Usage
 
-1. Make the script executable:
+1. Make the script executable: `chmod +x cppgenerate.sh`
+2. Run the script: `./cppgenerate.sh`
+3. Follow the prompts to enter the required information.
+4. Optionally, add external options such as attributes (public, private, protected).
+5. Review the entered information and confirm or edit as needed.
 
-    ```bash
-    chmod +x your_script.sh
-    ```
+## Script Organization
 
-2. Source the script or run it directly:
+- **Script Variables**: Initial variables such as author name and email.
+- **Set Default Values**: Function to set default values for file name, class name, namespace, and description.
+- **Generate Header**: Function to generate the C++ header file with a predefined template.
+- **Get Data**: Function to handle external options by adding attributes based on the user's input.
+- **Generate Program**: Function to generate the C++ program file with a predefined template.
+- **Add Attributes**: Function to interactively add attributes (public, private, protected) to the class.
+- **External Options**: Function to handle user input for external options (e.g., adding attributes).
+- **Input Needed Data**: Main loop for user interaction, allowing the user to confirm or edit the entered information.
 
-    ```bash
-    source your_script.sh
-    ```
+## Examples
 
-    ```bash
-    ./your_script.sh
-    ```
+Here are a few examples of using the script:
 
-3. Run the script with a command to search and execute:
+![image](https://github.com/t0ti20/Bash_Scripting/assets/61616031/e308d1b1-82d5-4aa9-a937-4f017ca4225e)
 
-    ```bash
-    cmd "your_command"
-    ```
+- Basic Usage:
+```bash
+./cppgenerate.sh
+```
+## Author
 
-## Functions
+- Khaled El-Sayed
+- Email: @t0ti20
 
-### Print_All_Commands()
+## License
 
-Prints all saved commands in the database file.
+This script is provided under the MIT License.
 
-### Search_For_Command(command_name)
-
-Searches for a specific command by name in the database.
-
-### Check_Result()
-
-Checks the result of the search and either executes the command or displays an error message.
-
-## Main Application
-
-The main application checks the command-line arguments. If no arguments are provided, it prints all saved commands. If a command name is provided, it searches for and executes the command if found.
-
-## Database File
-
-The script uses a file located at `~/.Command_List` to store the saved commands. Ensure this file exists and is writable.
+---
