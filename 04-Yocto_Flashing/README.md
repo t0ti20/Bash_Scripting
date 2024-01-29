@@ -42,10 +42,10 @@ This Bash script provides a user-friendly interface for flashing, mounting, and 
 
 ## Author
 
-- Author: [Your Name]
-- Email: [Your Email]
+- Author: Khaled El-Sayed
+- Email: khaled.3bdulaziz@icloud.com
 
-Feel free to contribute or report issues on [GitHub Repository](link-to-your-repo).
+Feel free to contribute or report issues on [GitHub Repository](https://github.com/t0ti20/Bash_Scripting/edit/master/04-Yocto_Flashing).
 
 ---
 
