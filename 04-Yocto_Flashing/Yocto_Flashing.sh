@@ -2,8 +2,7 @@
 ############################################
 #------------ Script Variables -------------
 ############################################
-WIC_Image="/home/t0ti20/Shared/rpi-test-image-raspberrypi4-64.wic.bz2"
-
+WIC_Image="$(ls /home/t0ti20/Shared/rpi-test-image-raspberrypi4-64*.wic.bz2)"
 ############################################
 #------------ Flashing Image ---------------
 ############################################
